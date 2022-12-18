@@ -1,0 +1,11 @@
+#sliderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas {
+  border: 1px solid black;
+  display: inline;
+}

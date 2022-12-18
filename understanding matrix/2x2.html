@@ -1,0 +1,32 @@
+<link href="2x2.css">
+<style>
+  /* Style the matrix form and labels */
+  .matrix-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .matrix-form label {
+    margin-bottom: 5px;
+  }
+  .matrix-form input[type=range] {
+    width: 300px;
+  }
+  .matrix-form label span {
+    margin-left: 10px;
+  }
+</style>
+
+<form class="matrix-form">
+  <label for="aValue"><span id="aValue">1</span></label>
+  <input type="range" id="a" min="-1" max="1" step="0.01" value="1" oninput="updateMatrix()">
+  <label for="bValue"><span id="bValue">0</span></label>
+  <input type="range" id="b" min="-1" max="1" step="0.01" value="0" oninput="updateMatrix()">
+  <label for="cValue"><span id="cValue">0</span></label>
+  <input type="range" id="c" min="-1" max="1" step="0.01" value="0" oninput="updateMatrix()">
+  <label for="dValue" id="dValue">1</label>
+  <input type="range" id="d" min="-1" max="1" step="0.01" value="1" oninput="updateMatrix()">
+</form>
+
+<canvas id="canvas"></canvas>
+<script src="2x2.js"></script>
